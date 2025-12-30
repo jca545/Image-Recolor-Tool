@@ -33,7 +33,6 @@ def isBlue(pixel):
         return True
     return False
 
-
 def isYellow(pixel):
     r = pixel[0]
     g = pixel[1]
@@ -55,10 +54,8 @@ def match(pixel):
         return True
     return False
 
+
 # ---- main program ----
-
-
-
 img = Image.open(INPUT).convert("RGBA")
 pixels = img.load()
 
@@ -73,7 +70,7 @@ for row in range(height):
         if a == 0:
             continue
 
-        # Your style:
+        # replacing
         if isPurple([r, g, b]):
             pixels[col, row] = (*NEW_COLOR, a)   # same alpha
 

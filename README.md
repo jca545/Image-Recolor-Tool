@@ -39,3 +39,4 @@ For replacing specific rgb color
 ```bash
 python3 main.py
 ```
+You should see a "Saved: ..." in the terminal when done.
